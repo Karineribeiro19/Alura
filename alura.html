@@ -1,0 +1,261 @@
+<html><head><base href="https://mangastore.com/">
+<title>MangaStore - Sua Loja de Mangás Online</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4F4;
+  }
+  .header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .search-container {
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 2rem;
+  }
+  .search-bar {
+    background-color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  .main-content {
+    padding: 2rem;
+  }
+  .section-title {
+    color: #2C3E50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .manga-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .manga-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .manga-card:hover {
+    transform: translateY(-5px);
+  }
+  .manga-cover {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .manga-info {
+    padding: 1rem;
+  }
+  .manga-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .manga-author {
+    color: #7F8C8D;
+    font-size: 0.9rem;
+  }
+  .manga-price {
+    color: #E74C3C;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  .buy-button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  .buy-button:hover {
+    background-color: #2980B9;
+  }
+  .genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .genre-button {
+    background-color: #34495E;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .genre-button:hover {
+    background-color: #2C3E50;
+  }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MangaStore</div>
+    <div class="search-container">
+      <input type="text" placeholder="Procure seu mangá favorito..." class="search-bar">
+    </div>
+    <div>
+      <span>🛒</span>
+      <span>👤</span>
+    </div>
+  </header>
+  
+  <main class="main-content">
+    <section>
+      <h2 class="section-title">MANGÁS EM DESTAQUE</h2>
+      <div class="manga-grid">
+        <div class="manga-card">
+          <img src="https://replicate.delivery/yhqm/MQ8jWEeO2j1IYScen9meOaGYWgjpRtSUJW5ksvytdiIXXfjOB/out-0.webp" alt="Capa do mangá One Piece" class="manga-cover">
+          <div class="manga-info">
+            <div class="manga-title">One Piece Vol. 1</div>
+            <div class="manga-author">Eiichiro Oda</div>
+            <div class="manga-price">R$ 29,90</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+        <div class="manga-card">
+          <img src="https://replicate.delivery/yhqm/LZ1Y6gUE0KaULhojM8O8aJlRDRiCezaJJeBfDbT5zEpXXfjOB/out-0.webp" alt="Capa do mangá Naruto" class="manga-cover">
+          <div class="manga-info">
+            <div class="manga-title">Naruto Vol. 1</div>
+            <div class="manga-author">Masashi Kishimoto</div>
+            <div class="manga-price">R$ 27,90</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+        <div class="manga-card">
+          <img src="https://m.media-amazon.com/images/I/51DZeZw7K0L._SY445_SX342_.jpg" alt="Capa do mangá Attack on Titan" class="manga-cover">
+          <div class="manga-info">
+            <div class="manga-title">Attack on Titan Vol. 1</div>
+            <div class="manga-author">Hajime Isayama</div>
+            <div class="manga-price">R$ 32,90</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+        <div class="manga-card">
+          <img src="https://replicate.delivery/yhqm/MGEEP5d9hDYkDd29KlWnxNywnng0HemOfsQSgeh1UsOWXfjOB/out-0.webp" alt="Capa do mangá My Hero Academia" class="manga-cover">
+          <div class="manga-info">
+            <div class="manga-title">My Hero Academia Vol. 1</div>
+            <div class="manga-author">Kohei Horikoshi</div>
+            <div class="manga-price">R$ 28,90</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <h2 class="section-title">LANÇAMENTOS</h2>
+      <div class="manga-grid">
+        <div class="manga-card">
+          <img src="https://replicate.delivery/yhqm/RH7omVTOa7ZRF1d46fCmE16fU9KZ8HdvbfGEBSLMX1bZXfjOB/out-0.webp" alt="Capa do mangá Demon Slayer" class="manga-cover">
+          <div class="manga-info">
+            <div class="manga-title">Demon Slayer Vol. 23</div>
+            <div class="manga-author">Koyoharu Gotouge</div>
+            <div class="manga-price">R$ 34,90</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+        <div class="manga-card">
+          <img src="https://replicate.delivery/yhqm/no2aRCOXCqLBIRujfBdNaOe1B5s1NxqCddqyZzZFmV0rrfRnA/out-0.webp" alt="Capa do mangá Jujutsu Kaisen" class="manga-cover">
+          <div class="manga-info">
+            <div class="manga-title">Jujutsu Kaisen Vol. 15</div>
+            <div class="manga-author">Gege Akutami</div>
+            <div class="manga-price">R$ 33,90</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+        <div class="manga-card">
+          <img src="https://replicate.delivery/yhqm/R618DdA5fpVgEaeSpnrnpkYoPHT79TQcMel5Iq0WuzOXXfjOB/out-0.webp" alt="Capa do mangá Chainsaw Man" class="manga-cover">
+          <div class="manga-info">
+            <div class="manga-title">Chainsaw Man Vol. 11</div>
+            <div class="manga-author">Tatsuki Fujimoto</div>
+            <div class="manga-price">R$ 31,90</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+        <div class="manga-card">
+          <img src="https://replicate.delivery/yhqm/sc4iS9pTp9p4FxNeqtNnEEEteEkaiAmy5L6aq2VHaxbrrfRnA/out-0.webp" alt="Capa do mangá Tokyo Revengers" class="manga-cover">
+          <div class="manga-info">
+            <div class="manga-title">Tokyo Revengers Vol. 7</div>
+            <div class="manga-author">Ken Wakui</div>
+            <div class="manga-price">R$ 30,90</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="genres">
+      <button class="genre-button">AÇÃO</button>
+      <button class="genre-button">AVENTURA</button>
+      <button class="genre-button">ROMANCE</button>
+      <button class="genre-button">COMÉDIA</button>
+      <button class="genre-button">SUSPENSE</button>
+      <button class="genre-button">HORROR</button>
+      <button class="genre-button">SLICE OF LIFE</button>
+      <button class="genre-button">ESPORTE</button>
+    </section>
+  </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  // Adiciona interatividade aos cards de mangá
+  const mangaCards = document.querySelectorAll('.manga-card');
+  mangaCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-10px)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+    });
+  });
+
+  // Adiciona interatividade aos botões de compra
+  const buyButtons = document.querySelectorAll('.buy-button');
+  buyButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      const title = e.target.closest('.manga-info').querySelector('.manga-title').textContent;
+      alert(`Você adicionou "${title}" ao seu carrinho!`);
+    });
+  });
+
+  // Adiciona interatividade à barra de pesquisa
+  const searchBar = document.querySelector('.search-bar');
+  searchBar.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      alert(`Pesquisando por: ${searchBar.value}`);
+    }
+  });
+
+  // Adiciona interatividade aos botões de gênero
+  const genreButtons = document.querySelectorAll('.genre-button');
+  genreButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const genre = button.textContent;
+      alert(`Você selecionou o gênero: ${genre}`);
+    });
+  });
+});
+</script>
+
+</body></html>
